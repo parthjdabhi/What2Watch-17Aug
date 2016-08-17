@@ -16,6 +16,7 @@ import FBSDKLoginKit
 import Firebase
 import OAuthSwift
 import IQKeyboardManagerSwift
+import Alamofire
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
@@ -56,6 +57,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
             self.window!.rootViewController = navigationController
             self.window!.makeKeyAndVisible()
         }
+        
+        
+//        let movieDetail = "http://www.omdbapi.com/"  //http:// www.omdbapi.com/?i=(*imdbID*)&plot=short&r=json
+//        Alamofire.request(.GET, movieDetail, parameters: ["i": "tt0091203", "apikey":"57288a3b", "plot":"short", "r":"json"])
+//            .responseJSON { response in
+//                debugPrint(response)
+//                
+//                if let JSON = response.result.value as? NSDictionary {
+//                    print("Success with JSON: \(JSON)")
+//                    //let cat = JSON["data"] as? Array<NSDictionary>
+//                    //print("cat : \(cat)")
+//                }
+//                
+//        }
         
         return true
     }

@@ -383,6 +383,7 @@ class MainScreenViewController: UIViewController {
     {
         
         let movieDescriptionViewController = self.storyboard?.instantiateViewControllerWithIdentifier("MovieDescriptionViewController") as! MovieDescriptionViewController!
+        movieDescriptionViewController.movieDetail = movies[currentIndex] as? [String:String]
         self.navigationController?.pushViewController(movieDescriptionViewController, animated: true)
         
     }

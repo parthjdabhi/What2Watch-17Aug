@@ -21,6 +21,7 @@ target 'What2Watch' do
     pod 'UIActivityIndicator-for-SDWebImage'
     pod 'IQKeyboardManagerSwift'
     # Pods for What2Watch
+    pod 'Alamofire', '~> 3.4'
     
     # Pods for What2Watch
     
